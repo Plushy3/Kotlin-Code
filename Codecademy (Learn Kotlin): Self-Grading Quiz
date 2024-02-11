@@ -7,58 +7,58 @@ fun main() {
   // Write your code below
   var points: Int = 0
 
-println("What is 75 / 5?")
-var studentAnswer1 = Integer.valueOf(readLine())
+  println("What is 75 / 5?")
+  var studentAnswer1 = Integer.valueOf(readLine())
 
-println("What is the value of y in the equation 6 * 2y = 36")
-var studentAnswer2 = Integer.valueOf(readLine())
+  println("What is the value of y in the equation 6 * 2y = 36")
+  var studentAnswer2 = Integer.valueOf(readLine())
 
-println("Name the type of triangle that has two equal sides")
-var studentAnswer3 = readLine() 
+  println("Name the type of triangle that has two equal sides")
+  var studentAnswer3 = readLine() 
 
-println("What is the value of 8 * 6 - (3 - 2)")
-var studentAnswer4 = Integer.valueOf(readLine())
+  println("What is the value of 8 * 6 - (3 - 2)")
+  var studentAnswer4 = Integer.valueOf(readLine())
 
-if (studentAnswer1 == quizAnswer1) {
-  points += 25
-}
+  if (studentAnswer1 == quizAnswer1) {
+    points += 25
+  }
 
-if (studentAnswer2 == quizAnswer2) {
-  points += 25
-} else if (studentAnswer2 == quizAnswer2+1 or quizAnswer2-1) { 
-  points += 20
-  println("The answer $studentAnswer2 is within 1 point of $quizAnswer2")
-} else {
-  points += 1
-}
+  if (studentAnswer2 == quizAnswer2) {
+    points += 25
+  } else if (studentAnswer2 == quizAnswer2+1 or quizAnswer2-1) { 
+    points += 20
+    println("The answer $studentAnswer2 is within 1 point of $quizAnswer2")
+  } else {
+    points += 1
+  }
 
-if (studentAnswer3 == quizAnswer3) {
-  points += 25
-} else if (studentAnswer3 == "equilateral") {
+  if (studentAnswer3 == quizAnswer3) {
+    points += 25
+  } else if (studentAnswer3 == "equilateral") {
   points += 10
-} else {
-  points += 1
-}
+  } else {
+    points += 1
+  }
 
-if (studentAnswer4 == quizAnswer4) {
-  points += 25
-} else if (studentAnswer4 in 44..54) {
-  points += 20
-} else {
-  points += 1
-}
+  if (studentAnswer4 == quizAnswer4) {
+    points += 25
+  } else if (studentAnswer4 in 44..54) {
+    points += 20
+  } else {
+    points += 1
+  }
 
-if (points in 0..59) {
-  println("The student received an F") 
-} else if (points in 60..69) {
-  println("The student received a D") 
-} else if (points in 70..79) {
-  println("The student received a C") 
-} else if (points in 80..89) {
-  println("The student received a B") 
-} else if (points in 90..100) {
-  println("The student received an A") 
-} else if (points in 101..110) {
-  println("The student received an A+") 
-}
-}
+  if (points in 0..59) {
+      println("The student received an F") 
+  } else if (points in 60..69) {
+      println("The student received a D") 
+  } else if (points in 70..79) {
+      println("The student received a C") 
+  } else if (points in 80..89) {
+      println("The student received a B") 
+  }  else if (points in 90..100) {
+      println("The student received an A") 
+  }  else if (points in 101..110) {
+      println("The student received an A+") 
+  }
+  }
